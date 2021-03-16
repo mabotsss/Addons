@@ -39,7 +39,7 @@ async def ocrify(ult):
     if pat:
         atr = f"&language={pat}&"
     else:
-        atr = "&language=eng&"
+        atr = "&"
     tt = uf(dl)
     li = "https://telegra.ph" + tt[0]
     gr = r.get(
