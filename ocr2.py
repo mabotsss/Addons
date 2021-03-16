@@ -41,7 +41,7 @@ async def ocr_space_file(
     return r.json()
 
 
-@ultroid_cmd(pattern="ocer ?(.*)")
+@ultroid_cmd(pattern="ocer(?: |$)(.*)")
 async def ocr(event):
     catevent = await eor(event, "`Reading...`")
     if not os.path.isdir(TEMP_DIR):
